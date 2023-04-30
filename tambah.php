@@ -23,22 +23,8 @@ if (isset($_POST["submit"])) {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CRUD</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    html {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    h1 {
-      margin-top: 7rem;
-    }
-
-    input {
-      float: right;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/tu.css">
 </head>
 
 <body>
@@ -70,7 +56,9 @@ if (isset($_POST["submit"])) {
     <input type="text" name="cita">
     <br><br>
     <label for="">Gambar : </label>
+    <img src="img.png" alt="">
     <input type="file" name="gambar">
+    <script src="index.js"></script>
     <br><br>
     <button type="submit" name="submit">kirim</button>
     <button> <a style="text-decoration: none; color:black;" href="index.php">Kembali</a></button>

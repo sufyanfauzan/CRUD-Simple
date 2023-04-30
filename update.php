@@ -26,27 +26,13 @@ if (isset($_POST["submit"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        html {
-            display: flex;
-            justify-content: center;
-        }
-
-        h1 {
-            margin-top: 7rem;
-        }
-
-        input {
-            float: right;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/tu.css">
 </head>
 
 <body>
     <h1>Update Data</h1>
     <form action="" method="post" enctype="multipart/form-data">
-
         <input type="hidden" name="id" value="<?= $student["id"]; ?>">
         <input type="hidden" name="gambarLama" value="<?= $student['gambar']; ?>">
         <br><br>
@@ -76,7 +62,8 @@ if (isset($_POST["submit"])) {
         <br><br>
         <label for="">Gambar : </label>
         <img src=" img/<?= $student['gambar']; ?>" width="150"> <br><br>
-        <input type="file" name="gambar" id="gambar">
+        <input type="file" name="gambar">
+        <script src="index.js"></script>
         <br><br>
         <button type="submit" name="submit">Update</button>
         <button> <a style="text-decoration: none; color:black;" href="index.php">Kembali</a></button>

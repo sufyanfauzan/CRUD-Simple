@@ -14,9 +14,8 @@ $student = query("SELECT * FROM marga WHERE id= $id")[0];
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/style.css">
   <title>CRUD</title>
-
   <style>
     html,
     p,
@@ -51,11 +50,8 @@ $student = query("SELECT * FROM marga WHERE id= $id")[0];
 </head>
 
 <body>
-
-
   <div class="card">
     <h1 style="text-align:center; padding-top:5rem;">Data Lengkap</h1>
-
     <p> <img src="img/<?= $student['gambar']; ?>" width="50"></p>
     <p><?= $student["nama"] ?></p>
     <p><?= $student["nis"] ?></p>
@@ -66,10 +62,7 @@ $student = query("SELECT * FROM marga WHERE id= $id")[0];
     <p><?= $student["alamat"] ?></p>
     <p><?= $student["cita"] ?></p>
     <p style="text-align:center;"><a style="text-decoration: none;" href="index.php">Kembali</a></p>
-
   </div>
-
-
 </body>
 
 </html>
