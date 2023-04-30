@@ -1,0 +1,57 @@
+.cari {
+  display: flex;
+  justify-content: center;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.2rem;
+}
+
+th,
+td {
+  padding: 8px;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: sticky;
+  z-index: 1;
+}
+
+.dropdown-content li {
+  display: block;
+  padding-right: 2rem;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+@media screen and (max-width: 600px) {
+
+  th,
+  td {
+    padding: 2px;
+    font-size: 0.9rem;
+  }
+}
